@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Courtfield Travel Consultancy</title>
+<style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      line-height: 1.6;
+      background-color: #f5f9fc;
+    }
+    header {
+      background: #0077b6;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    nav {
+      background: #023e8a;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: white;
+      padding: 15px 20px;
+      text-decoration: none;
+      display: block;
+    }
+    nav a:hover {
+      background: #0077b6;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .section-title {
+      color: #023e8a;
+      margin-bottom: 20px;
+      font-size: 28px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      margin: 15px 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    form input, form textarea, form button {
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    form button {
+      background: #0077b6;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    form button:hover {
+      background: #023e8a;
+    }
+    footer {
+      text-align: center;
+      background: #023e8a;
+      color: white;
+      padding: 20px 10px;
+      margin-top: 40px;
+    }
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+<header>
+<h1>Courtfield Travel Consultancy</h1>
+<p>Your journey begins with us</p>
+</header>
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About Us</a>
+<a href="#destinations">Destinations</a>
+<a href="#services">Services</a>
+<a href="#booking">Booking</a>
+<a href="#testimonials">Testimonials</a>
+<a href="#contact">Contact</a>
+</nav>
+<section id="home">
+<h2 class="section-title">Welcome to Courtfield Travel Consultancy</h2>
+<div class="card">
+<p>Discover the world with our expert guidance and tailor-made travel experiences. Whether you're planning a luxurious escape, a romantic honeymoon, or an adventurous journey, we're here to make it effortless and unforgettable.</p>
+</div>
+</section>
+<section id="about">
+<h2 class="section-title">About Us</h2>
+<div class="card">
+<p>Courtfield Travel Consultancy has been crafting unique travel experiences for over 10 years. We specialize in personalized itineraries and exceptional customer service, making sure every trip is perfect from start to finish.</p>
+</div>
+</section>
+<section id="destinations">
+<h2 class="section-title">Top Destinations</h2>
+<div class="card">
+<ul>
+<li>🌴 Bali - Tropical escapes and cultural wonders</li>
+<li>🗼 Paris - Romantic city breaks and history</li>
+<li>🦁 Kenya - Safari adventures and luxury lodges</li>
+<li>🗽 New York - Vibrant city life and entertainment</li>
+</ul>
+<div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px;">
+<img alt="Bali" src="https://via.placeholder.com/200x120?text=Bali" style="width: 200px; border-radius: 6px;"/>
+<img alt="Paris" src="https://via.placeholder.com/200x120?text=Paris" style="width: 200px; border-radius: 6px;"/>
+<img alt="Kenya" src="https://via.placeholder.com/200x120?text=Kenya" style="width: 200px; border-radius: 6px;"/>
+<img alt="New York" src="https://via.placeholder.com/200x120?text=New+York" style="width: 200px; border-radius: 6px;"/>
+</div>
+</div>
+</section>
+<section id="services">
+<h2 class="section-title">Our Services</h2>
+<div class="card">
+<ul>
+<li>✈️ Flight &amp; Hotel Bookings</li>
+<li>🧳 Custom Itineraries</li>
+<li>🚗 Car Rentals &amp; Transfers</li>
+<li>📋 Visa Assistance</li>
+<li>🛳️ Cruise Packages</li>
+</ul>
+</div>
+</section>
+<section id="booking">
+<h2 class="section-title">Get a Quote / Book Now</h2>
+<div class="card">
+<form action="https://formspree.io/f/mwkgyojj" method="POST">
+<input placeholder="Full Name" required="" type="text"/>
+<input placeholder="Email Address" required="" type="email"/>
+<input placeholder="Destination" required="" type="text"/>
+<textarea placeholder="Tell us about your trip..." rows="4"></textarea>
+<button type="submit">Submit</button>
+</form>
+</div>
+</section>
+<section id="testimonials">
+<h2 class="section-title">What Our Clients Say</h2>
+<div class="card">
+<p>“Courtfield planned our honeymoon to Greece and it was absolutely perfect! Stress-free and magical.” – Sarah &amp; Tom</p>
+<p>“Professional, friendly, and truly expert travel planning.” – Ahmed K.</p>
+<div style="margin-top: 15px;">
+<img alt="Clients" src="https://via.placeholder.com/100x100?text=Happy+Clients" style="width: 100px; border-radius: 50%;"/>
+</div>
+</div>
+</section>
+<section id="contact">
+<h2 class="section-title">Contact Us</h2>
+<div class="card">
+<p>Email: info@courtfieldtravel.com</p>
+<p>Phone: +44 1234 567890</p>
+<p>Address: 10 Queen Street, London, UK</p>
+</div>
+</section>
+<footer>
+<p>© 2025 Courtfield Travel Consultancy. All rights reserved.</p>
+</footer>
+</body>
+</html>
